@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        let dictReservation = ["ReservationDate" : "Monday, March 26, 2016", "ReservationTime" : "2:00 PM", "ServiceTitle" : "Gel Manicure", "PartySize" : "1", "Duration" : "30M", "ServiceDescription" : "Get the upper hand with our chip-resistant, mirror-finish gel polish that requires no drying time and last up to two weeks."];
 //        arrayReservation.add(dictReservation);
         let defaults = UserDefaults.standard
-        let array = defaults.array(forKey: "SavedObjArray")  as? [Any?] ?? [Any?]()
+        let array = defaults.array(forKey: "SavedObjArray") ?? []
         arrayReservation = NSMutableArray.init(array: array)
     }
     
