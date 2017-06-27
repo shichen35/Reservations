@@ -259,10 +259,10 @@ extension UIViewController: UITextFieldDelegate{
         toolBar.sizeToFit()
         textField.inputAccessoryView = toolBar
     }
-    func donePressed(){
+    @objc func donePressed(){
         view.endEditing(true)
     }
-    func cancelPressed(){
+    @objc func cancelPressed(){
         view.endEditing(true)
     }
 }

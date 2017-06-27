@@ -72,7 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     //MARK: Button Action
-    func barButtonAddReservation(sender:AnyObject){
+    @objc func barButtonAddReservation(sender:AnyObject){
         performSegue(withIdentifier: "SpaServicesSegueIdentifier", sender: sender)
     }
     
